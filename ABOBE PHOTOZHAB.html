@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABOBE PHOTOZHAB</title>
+	<style type="text/css">
+		body {
+			margin: 0 auto;
+		}
+		.head {
+			font-family: Arial;
+			font-weight: 600;
+			font-size: 34px;
+			margin: 50px auto 10px;
+			text-align: center;
+		}
+		#doc_time {
+			margin-bottom: 30px;
+			text-align: center;
+			font-family: Arial;
+		}
+		main {
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #12407585;
+			border-radius: 6px;
+			box-shadow: 0px 10px 52px 0px rgba(0,0,0,0.75);
+		}
+		.canv {
+			
+			padding: 50px 0px 50px 100px;
+			width: 700px;
+			box-sizing: border-box;
+			
+			float: left;
+		}
+		#canv {
+			width: 600px;
+			height: 400px;
+			border: 1px solid #8a8a8a;
+			background-color: white;
+		}
+		.tools {
+			padding-top: 50px;
+			padding-left: 20px;
+			float: right;
+			width: 270px;
+			font-family: Arial;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		p {
+			margin: 0;
+		}
+		.toolButton {
+			background-color: white;
+			border-radius: 4px;
+			border: none;
+		}
+		.toolButton:hover {
+			background-color: white;
+		}
+		.color {
+			height: 16px;
+			width: 16px;
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+		button[value='#ffffff'] {
+			background-color: #ffffff;
+		}
+		button[value='#000000'] {
+			background-color: #000000;
+		}
+		button[value='#00ffff'] {
+			background-color: #00ffff;
+		}
+		button[value='#ff00ff'] {
+			background-color: #ff00ff;
+		}
+		button[value='#ffff00'] {
+			background-color: #ffff00;
+		}
+		button[value='#00ff00'] {
+			background-color: #00ff00;
+		}
+		button[value='#0000ff'] {
+			background-color: #0000ff;
+		}
+		button[value='#ff0000'] {
+			background-color: #ff0000;
+		}
+		button[value='#ff9800'] {
+			background-color: #ff9800;
+		}
+		button[value='#00860a'] {
+			background-color: #00860a;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">Давай, сделай тут ШЕДЕВР!!!</div>
+	<div id="doc_time"></div>
+	<main>
+		<div class="canv">
+				<canvas id="canv" width="600" height="400"></canvas>
+			</div>
+			<div class="tools">
+				<div class="coordinates">
+					<h4>Координаты</h4>
+					<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+					<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+					<br>
+					<h4>Инструменты</h4>
+					<button class="toolButton" id='pen'>Pen</button>
+					<button class="toolButton" id='marker'>Marker</button>
+					<button class="toolButton" id='brush'>Brush</button></br></br>
+					<select id='sizeSelect'>
+						<option>3</option>
+						<option>5</option>
+						<option>10</option>
+						<option>15</option>
+						<option>20</option>
+					</select></br></br>
+					<button class='color' value='#ffffff'>
+					<button class='color' value='#000000'>
+					<button class='color' value='#00ffff'>
+					<button class='color' value='#0000ff'>
+					<button class='color' value='#ff00ff'>
+					<button class='color' value='#ff0000'>
+					<button class='color' value='#ffff00'>		
+					<button class='color' value='#ff9800'>
+					<button class='color' value='#00ff00'>
+					<button class='color' value='#00860a'>
+				</div>
+			</div>
+		<div style="clear:both"></div>
+</main>
+
+	<script src="abobe.js"></script>
+</body>
+</html>
